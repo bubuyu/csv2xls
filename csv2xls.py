@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
+import csv
+import xlwt
+import os
 
 def convcsv(cfile):
 	xlsname = cfile[0:-3]+'xls' #生成转换Excel后的文件名
@@ -53,7 +56,4 @@ def main():
 		convcsv (file)
 
 if __name__ == '__main__':
-	import csv
-	import xlwt
-	import os
 	main();
